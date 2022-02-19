@@ -1,4 +1,4 @@
-import 'package:colorlogger/colorlogger.dart';
+import 'package:logbox_color/logbox_color.dart';
 
 /// Split extensions for string.
 extension Split on String {

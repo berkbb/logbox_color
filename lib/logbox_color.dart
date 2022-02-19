@@ -1,11 +1,11 @@
 /// Support for doing something awesome.
 ///
 /// More dartdocs go here.
-library colorlogger;
+library logbox_color;
 
 import 'dart:io';
 
-import 'package:colorlogger/extensions.dart';
+import 'package:logbox_color/extensions.dart';
 import 'package:dart_console/dart_console.dart' as consolecontroller;
 
 ///* Info: Prints to console with color. Likestdout.writeLine() with colored foreground.

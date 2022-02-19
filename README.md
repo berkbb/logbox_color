@@ -1,10 +1,10 @@
-[![pub.dev Downloads](https://img.shields.io/pub/v/colorlogger)](https://pub.dev/packages/colorlogger)
-[![License](https://img.shields.io/github/license/berkbb/colorlogger?color=important)](https://pub.dev/packages/colorlogger)
+[![pub.dev Downloads](https://img.shields.io/pub/v/logbox_color)](https://pub.dev/packages/logbox_color)
+[![License](https://img.shields.io/github/license/berkbb/logbox_color?color=important)](https://pub.dev/packages/logbox_color)
 
 
-# Color Logger for Dart & Flutter
+# Color Box Logger for Dart & Flutter
 
-  Print colored logs on terminal / console.
+  Print colored box logs on terminal / console.
 
 ## Features
 
@@ -23,7 +23,7 @@
 1. Add this to your package's pubspec.yaml file:
 
 ```dart
-colorlogger: ^1.0.0
+logbox_color: ^1.0.0
 ```
 
 2. Save the pubspec.yaml file. Or alternatively you can use this code snippet on console:
@@ -41,7 +41,7 @@ flutter pub get
 3. Import it from code file:
 
 ```dart
-import 'package:colorlogger/colorlogger.dart';
+import 'package:logbox_color/logbox_color.dart';
 ```
 
 
