@@ -11,7 +11,7 @@ import 'package:dart_console/dart_console.dart' as consolecontroller;
 ///* Info: Prints to console with color. Likestdout.writeLine() with colored foreground.
 ///* Params: [msg] is message, [lvl] is log level.
 ///* Returns: none.
-///* Notes: ote that coloring only available on external OS terminals and Visual Studio and Visual Studio Code integrated terminal . Visual Studio and Visual Studio Code internalConsoke does not support coloring.
+///* Notes: Note that coloring only available on external OS terminals and Visual Studio and Visual Studio Code integrated terminal . Visual Studio and Visual Studio Code internalConsoke does not support coloring. Set dart.cliConsole to ecternalTerminal or terminal please.
 
 void printLog(String msg, LogLevel lvl) {
   var console = consolecontroller.Console();
@@ -37,6 +37,7 @@ void printLog(String msg, LogLevel lvl) {
       console.setForegroundColor(consolecontroller.ConsoleColor.white);
       break;
   }
+  print("\n"); //Empty space.
 
   StringBuffer title = StringBuffer(); // String buffer for title.
   var msgTitle = "⎧${lvl.getStringFromPriorityType()}⎫"; // Title
@@ -53,7 +54,7 @@ void printLog(String msg, LogLevel lvl) {
 
   double divide = msgOut.length / console.windowWidth;
   int ceiledDivide = divide.ceil();
-  int chunk = (msgOut.length / ceiledDivide - 1) as int;
+  int chunk = (msgOut.length / ceiledDivide - 1).toInt();
 
   //Print upper title.
   print(upper);
@@ -76,7 +77,7 @@ void printLog(String msg, LogLevel lvl) {
   {
     var groups = msgOut.splitWithCount(chunk);
 
-    for (int i = 0; i < groups!.length; i++) {
+    for (int i = 0; i < groups.length; i++) {
       var printCount = console.windowWidth;
       var startPrint = "⎮ ${groups[i]}";
       stdout.write(startPrint);
@@ -89,19 +90,18 @@ void printLog(String msg, LogLevel lvl) {
       }
 
       stdout.write(" ⎮");
-
-      print("");
     }
+    print("");
   }
 
   // Print footer.
   for (int i = 0; i < upper.length; i++) {
     stdout.write("⎯");
   }
-  print(""); //Empty space.
+  print("\n"); //Empty space.
 
   // Reset foreground.
-  // console.setForegroundColor(consolecontroller.ConsoleColor.white);
+  console.setForegroundColor(consolecontroller.ConsoleColor.white);
 }
 
 /// Log level enum.
