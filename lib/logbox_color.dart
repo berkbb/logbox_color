@@ -37,7 +37,8 @@ void printLog(String msg, LogLevel lvl) {
       console.setForegroundColor(consolecontroller.ConsoleColor.white);
       break;
   }
-  print("\n"); //Empty space.
+  stdout.writeln("");
+  //Empty space.
 
   StringBuffer title = StringBuffer(); // String buffer for title.
   var msgTitle = "⎧${lvl.getStringFromPriorityType()}⎫"; // Title
@@ -57,7 +58,7 @@ void printLog(String msg, LogLevel lvl) {
   int chunk = (msgOut.length / ceiledDivide - 1).toInt();
 
   //Print upper title.
-  print(upper);
+  stdout.writeln(upper);
 
   if (divide <= 1) // If 0 (empty) or 1 line.
   {
@@ -72,33 +73,34 @@ void printLog(String msg, LogLevel lvl) {
         stdout.write("⎮");
       }
     }
-    print("");
+    stdout.writeln("");
   } else // 2 or more line.
   {
     var groups = msgOut.splitWithCount(chunk);
 
     for (int i = 0; i < groups.length; i++) {
-      var printCount = console.windowWidth;
+      var printer = StringBuffer();
       var startPrint = "⎮ ${groups[i]}";
-      stdout.write(startPrint);
-      var spaceCount = printCount - startPrint.length - 2;
-      if (spaceCount != 0) // If will filled space available.
-      {
-        for (int z = 0; z < spaceCount; z++) {
-          stdout.write(" ");
+      printer.write(startPrint);
+      var printCount = console.windowWidth - startPrint.length;
+      for (var z = 0; z < printCount; z++) {
+        if (z == printCount - 1) {
+          printer.write("⎮");
+        } else {
+          printer.write(" ");
         }
       }
-
-      stdout.write(" ⎮");
+      stdout.write(printer.toString());
+      stdout.writeln("");
     }
-    print("");
   }
 
   // Print footer.
   for (int i = 0; i < upper.length; i++) {
     stdout.write("⎯");
   }
-  print("\n"); //Empty space.
+  stdout.writeln("");
+  //Empty space.
 
   // Reset foreground.
   console.setForegroundColor(consolecontroller.ConsoleColor.white);

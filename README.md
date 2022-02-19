@@ -23,7 +23,7 @@
 1. Add this to your package's pubspec.yaml file:
 
 ```dart
-logbox_color: ^1.0.0
+logbox_color: ^1.0.1
 ```
 
 2. Save the pubspec.yaml file. Or alternatively you can use this code snippet on console:
