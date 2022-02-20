@@ -23,7 +23,7 @@ Print log messages into colored box on terminal.
 1. Add this to your package's pubspec.yaml file:
 
 ```dart
-logbox_color: ^1.0.3
+logbox_color: ^1.0.4
 ```
 
 2. Save the pubspec.yaml file. Or alternatively you can use this code snippet on console:

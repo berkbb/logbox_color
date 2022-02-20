@@ -1,13 +1,13 @@
 name: logbox_color
 description: "Print log messages into colored box on terminal. Prints different log types with different colors.\nLog Types:\n * Verbose\n  * Info\n  * Debug\n  * Warning\n  * Error\n  * Unknown\n"
-version: 1.0.3
+version: 1.0.4
 repository: https://github.com/berkbb/logbox_color
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
 
 dependencies:
-  dart_console: ^1.0.1
+  ansicolor: ^2.0.1
 
 dev_dependencies:
   lints: ^1.0.1
