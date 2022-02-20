@@ -10,7 +10,7 @@ extension Split on String {
     if (isEmpty) throw Exception("String is empty.");
     if (chunkLength < 1) throw Exception("Chunk length is smaller than 1.");
 
-    List<String> exportList = <String>[];
+    List<String> exportList = <String>[]; // return list.
 
     for (int i = 0; i < length; i = i + chunkLength) {
       if (chunkLength + i > length) {

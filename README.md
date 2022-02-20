@@ -4,7 +4,7 @@
 
 # Color Box Logger for Dart & Flutter
 
-  Print colored box logs on terminal / console.
+Print log messages into colored box on terminal. 
 
 ## Features
 
@@ -23,7 +23,7 @@
 1. Add this to your package's pubspec.yaml file:
 
 ```dart
-logbox_color: ^1.0.1
+logbox_color: ^1.0.3
 ```
 
 2. Save the pubspec.yaml file. Or alternatively you can use this code snippet on console:
