@@ -1,6 +1,6 @@
 name: logbox_color
 description: "Print log messages into colored box on terminal. Prints different log types with different colors.\nLog Types:\n * Verbose\n  * Info\n  * Debug\n  * Warning\n  * Error\n  * Unknown\n"
-version: 1.0.4
+version: 1.0.5
 repository: https://github.com/berkbb/logbox_color
 
 environment:
