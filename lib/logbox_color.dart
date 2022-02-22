@@ -23,7 +23,6 @@ void printLog(String msg, LogLevel lvl) {
   }
   if (consoleNotTerminal) // Console
   {
-    print("It is a web browser console ?");
     var classicPen = AnsiPen() // Return ansi term color.
       ..reset()
       ..xterm(40); //  green 2 xterm
