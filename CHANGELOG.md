@@ -1,3 +1,8 @@
+## [1.0.7] - 2026-02-13
+
+* Updated for Flutter 3.41.1 and Dart 3.11.0 compatibility.
+* Updated SDK constraints and dev dependencies.
+
 ## [1.0.6] - 2022-02-22
 
 * "Web" print indicator removed.

@@ -4,7 +4,7 @@ import 'package:ansicolor/ansicolor.dart';
 extension Split on String {
   ///* Info: Split long text to pieces controlled with chunk length.
   ///* Params: [chunkLength] is chunk length. Min  value is 1.
-  ///* Returns: List<String>.
+  ///* Returns: `List<String>`.
   ///* Notes:
   List<String> splitWithCount(int chunkLength) {
     if (isEmpty) {

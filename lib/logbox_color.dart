@@ -1,8 +1,3 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
-library logbox_color;
-
 import 'dart:io';
 import 'package:ansicolor/ansicolor.dart';
 import 'package:logbox_color/extensions.dart';
